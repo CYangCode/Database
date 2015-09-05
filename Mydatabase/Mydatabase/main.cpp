@@ -1,33 +1,38 @@
 #include <stdio.h>
+#include <windows.h>
+#include <tchar.h>
+#include "FileStorageManager.h"
 
-void main(void)
+const int BUFFER_SIZE = 81;
+//页头结构体
+struct PageHeaderData
 {
-	FILE *stream;
-	char list[30];
-	int  i, numread, numwritten;
+	UINT16 pd_tli;
+	UINT16 pd_flag;
+	int pd_lower;
+	int pd_upper;
+	int pd_special;
+	UINT16 pd_pagesize_version;
+	int pd_prune_xid;
+};
 
-	/* Open file in text mode: */
-	if ((stream = fopen("fread.out", "w+t")) != NULL)
-	{
-		for (i = 0; i < 25; i++)
-			list[i] = (char)('z' - i);
-		/* Write 25 characters to stream */
-		numwritten = fwrite(list, sizeof(char), 25, stream);
-		printf("Wrote %d items\n", numwritten);
-		fclose(stream);
+struct StructA
+{
+	int a;
+	int b;
+};
+void __cdecl _tmain(int argc, TCHAR *argv[])
 
-	}
-	else
-		printf("Problem opening the file\n");
-
-	if ((stream = fopen("fread.out", "r+t")) != NULL)
-	{
-		/* Attempt to read in 25 characters */
-		numread = fread(list, sizeof(char), 25, stream);
-		printf("Number of items read = %d\n", numread);
-		printf("Contents of buffer = %.25s\n", list);
-		fclose(stream);
-	}
-	else
-		printf("File could not be opened\n");
+{	
+	FileStorageManager manager;
+	//manager.CreateEmptyFile("d:/2.txt", 2 * 1024);
+	char * str = "Hello World";
+	//manager.WriteToFile("d:/2.txt", 13, str, strlen(str));
+	StructA a;
+	/*a.a = 123;
+	a.b = 43;*/
+//	manager.WriteToFile("d:/2.txt", 0, &a, sizeof(a));
+	a = *(StructA *)manager.ReadFromFile("d:/2.txt", 0, sizeof(StructA));
+	printf("%d", a.a);
+	system("pause");
 }
