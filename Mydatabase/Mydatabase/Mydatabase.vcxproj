@@ -78,11 +78,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FileStorageManager.cpp" />
+    <ClCompile Include="DbFileStorageManager.cpp" />
+    <ClCompile Include="FileUtil.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FileStorageManager.h" />
+    <ClInclude Include="DbFileStorageManager.h" />
+    <ClInclude Include="FileUtil.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
