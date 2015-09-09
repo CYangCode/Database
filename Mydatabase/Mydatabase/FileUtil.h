@@ -24,9 +24,5 @@ public:
 	void * ReadFromFile(const char * fileName, long position, int length);
 	//将内容写入指定位置,文件名为fileName，开始位置为position，写入内容为DataBuffer
 	void WriteToFile(const char * fileName, long position, void * dataBuffer, DWORD strLen);
-	//向名字为slotName的槽中插入dataBuffer
-	int InsertSlot(const  char * slotName, void * dataBuffer, int dataLen);
-	//从槽名为slotName的文件中找到第pageNumber个数据的信息
-	void * ReadData(const  char * slotName, int pageNumber);
 };
 

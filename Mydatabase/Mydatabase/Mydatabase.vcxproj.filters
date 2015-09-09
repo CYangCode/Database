@@ -21,7 +21,7 @@
     <ClCompile Include="FileUtil.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="DbFileStorageManager.cpp">
+    <ClCompile Include="DbFileManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="FileUtil.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="DbFileStorageManager.h">
+    <ClInclude Include="DbFileManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

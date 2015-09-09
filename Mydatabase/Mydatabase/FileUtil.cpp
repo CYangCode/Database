@@ -141,32 +141,3 @@ void FileUtil::WriteToFile(const char * fileName, long position, void * dataBuff
 	CloseHandle(hFile);
 }
 
-int FileUtil::InsertSlot(const char * slotName, void * dataBuffer, int dataLen)
-{
-	PageHeader * ph = (PageHeader *)ReadFromFile(slotName, 0, sizeof(PageHeader));
-	//如果块已经存满，则带错返回
-	if (ph->pd_lower + sizeof(Record) > ph->pd_lower - dataLen) {
-		return -1;
-	}
-	Record record;
-	//将数据写到尾部
-	record.offset = ph->pd_upper - dataLen;
-	record.length = dataLen;
-	//记录从前往后写
-	WriteToFile(slotName, ph->pd_lower, &record, sizeof(Record));
-	//数据从后往前写
-	WriteToFile(slotName, record.offset, dataBuffer, dataLen);
-	//更新PageHeader
-	ph->pd_lower += sizeof(Record);
-	ph->pd_upper -= dataLen;
-	WriteToFile(slotName, 0, ph, sizeof(PageHeader));
-	delete ph;
-	return 1;
-}
-
-void * FileUtil::ReadData(const char * slotName, int pageNumber)
-{
-	//读第一个pageHeader
-	Record * record = (Record *)ReadFromFile(slotName, sizeof(PageHeader)+(pageNumber - 1)* sizeof(Record), sizeof(Record));
-	return ReadFromFile(slotName, record->offset, record->length);
-}
