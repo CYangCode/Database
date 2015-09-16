@@ -17,6 +17,6 @@ private:
 	string dbName; //数据库名
 	int blockSize; //块的大小
 	FileUtil util;
-//	int curBlockNum; //当前正在操作的块的位置
+	int curBlockNum; //当前正在操作的块的位置
 	int blockAccount; //块的总数量
 };
