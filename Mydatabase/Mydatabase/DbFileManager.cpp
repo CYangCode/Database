@@ -3,7 +3,7 @@
 
 
 //d盘是数据库默认存储路径
-DbFileManager::DbFileManager() :dbName("d:/"), curBlockNum(0)
+DbFileManager::DbFileManager() :dbName("d:/")
 {
 }
 
@@ -32,6 +32,8 @@ int DbFileManager::CreateDBFile(string dbName, int fileSize, int blockSize)
 
 int DbFileManager::InsertData(void * dataBuffer, int dataLen)
 {
+	int curBlockNum = 0;
+
 	//获得当前块的页头信息
 	PageHeader * currentPageData = (PageHeader *)util.ReadFromFile(this->dbName.c_str(), curBlockNum * blockSize, sizeof(PageHeader));
 	//如果块已经存满，则存储于下一个块中
@@ -43,6 +45,8 @@ int DbFileManager::InsertData(void * dataBuffer, int dataLen)
 			return -1;
 		}
 		currentPageData = (PageHeader *)util.ReadFromFile(this->dbName.c_str(), curBlockNum * blockSize, sizeof(PageHeader));
+		//lower = currentPageData->pd_lower + sizeof(Record);
+		//upper = currentPageData->pd_upper - dataLen;
 	}
 	Record record;
 	//将数据写到尾部
