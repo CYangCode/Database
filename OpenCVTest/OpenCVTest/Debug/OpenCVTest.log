@@ -1,0 +1,16 @@
+﻿生成启动时间为 2016/4/18 13:25:06。
+     1>项目“D:\代码\GitHub\Database\OpenCVTest\OpenCVTest\OpenCVTest.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\IDE\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt OpenCVTest.cpp
+         OpenCVTest.cpp
+     1>d:\代码\github\database\opencvtest\opencvtest\opencvtest.cpp(22): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+       Link:
+         D:\IDE\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\代码\GitHub\Database\OpenCVTest\Debug\OpenCVTest.exe" /INCREMENTAL /NOLOGO opencv_ml2412d.lib opencv_calib3d2412d.lib opencv_contrib2412d.lib opencv_core2412d.lib opencv_features2d2412d.lib opencv_flann2412d.lib opencv_gpu2412d.lib opencv_highgui2412d.lib opencv_imgproc2412d.lib opencv_legacy2412d.lib opencv_objdetect2412d.lib opencv_ts2412d.lib opencv_video2412d.lib opencv_nonfree2412d.lib opencv_ocl2412d.lib opencv_photo2412d.lib opencv_stitching2412d.lib opencv_superres2412d.lib opencv_videostab2412d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\代码\GitHub\Database\OpenCVTest\Debug\OpenCVTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\代码\GitHub\Database\OpenCVTest\Debug\OpenCVTest.lib" /MACHINE:X86 Debug\FrameProcessor.obj
+         Debug\MultiWindows_Display.obj
+         Debug\OpenCVTest.obj
+         OpenCVTest.vcxproj -> D:\代码\GitHub\Database\OpenCVTest\Debug\OpenCVTest.exe
+     1>已完成生成项目“D:\代码\GitHub\Database\OpenCVTest\OpenCVTest\OpenCVTest.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.70

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="antlr3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3baserecognizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3basetree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3basetreeadaptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3bitset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3collections.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3commontoken.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3commontree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3commontreeadaptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3commontreenodestream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3convertutf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3cyclicdfa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3debugeventlistener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3defs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3encodings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3errors.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3exception.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3filestream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3interfaces.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3intstream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3lexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3memory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3parsetree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3recognizersharedstate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3rewritestreams.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3string.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3tokenstream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="antlr3treeparser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyElangLexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyElangParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SynTreeNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="antlr3baserecognizer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3basetree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3basetreeadaptor.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3bitset.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3collections.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3commontoken.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3commontree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3commontreeadaptor.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3commontreenodestream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3convertutf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3cyclicdfa.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3debughandlers.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3encodings.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3exception.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3filestream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3inputstream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3intstream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3lexer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3parser.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3rewritestreams.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3string.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3tokenstream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="antlr3treeparser.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyElangLexer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyElangParser.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SynTreeNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyElang.g" />
+    <None Include="MyElang.tokens" />
+  </ItemGroup>
+</Project>

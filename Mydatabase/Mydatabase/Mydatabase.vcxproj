@@ -81,10 +81,17 @@
     <ClCompile Include="DbFileManager.cpp" />
     <ClCompile Include="FileUtil.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MemoryContext.cpp" />
+    <ClCompile Include="MemoryManager.cpp" />
+    <ClCompile Include="Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DbFileManager.h" />
     <ClInclude Include="FileUtil.h" />
+    <ClInclude Include="MemoryContext.h" />
+    <ClInclude Include="MemoryManager.h" />
+    <ClInclude Include="AllocSetMethods.h" />
+    <ClInclude Include="Tree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
